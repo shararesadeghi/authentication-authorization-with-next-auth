@@ -1,5 +1,5 @@
 import NextAuth from "next-auth";
-import { CredentialsProvider } from "next-auth/providers";
+import  CredentialsProvider  from "next-auth/providers/credentials";
 import connectDB from "./../../../utils/connectDB";
 import User from "./../../../models/User";
 import { verifyPassword } from "../../../utils/auth";
@@ -23,7 +23,7 @@ const authOptions = {
 
         try {
           await connectDB();
-        } catch (err) {
+        } catch (error) {
           throw new Error("Error in connecting to DB!");
         }
 
