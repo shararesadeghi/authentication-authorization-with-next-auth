@@ -6,6 +6,9 @@ export default function Home() {
     <div className={styles.container}>
       <h1>Next-Auth</h1>
       <button>
+        <Link href="/dashboard">Dashboard</Link>
+      </button>
+      <button>
         <Link href="/signup">Register</Link>
       </button>
       <button>
